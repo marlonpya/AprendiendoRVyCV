@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_row_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/etNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintRight_toRightOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="Nombre" />
+
+        <TextView
+            android:id="@+id/etEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintRight_toRightOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/etNombre"
+            tools:text="Edad"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
